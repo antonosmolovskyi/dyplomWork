@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="445.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.dyplom5_0.AplikowacPageController">
+   <children>
+      <Button fx:id="ButtonGoToMainPage" layoutX="4.0" layoutY="416.0" mnemonicParsing="false" onAction="#mainPageButton" text="Przyróć" />
+      <TextField fx:id="txtCity" layoutX="59.0" layoutY="125.0" promptText="Łódź" />
+      <TextField fx:id="txtUniversity" layoutX="235.0" layoutY="125.0" promptText="Uniwersytet Łódzki" />
+      <TextField fx:id="txtDepartment" layoutX="412.0" layoutY="125.0" prefHeight="26.0" prefWidth="164.0" promptText="Ekonomiczno-Socjologiczny" />
+      <Label layoutX="278.0" layoutY="98.0" text="Uniwersytet" />
+      <Label layoutX="116.0" layoutY="98.0" text="Miasto" />
+      <Label layoutX="474.0" layoutY="98.0" text="Wydział" />
+      <Button fx:id="findButton" layoutX="589.0" layoutY="125.0" mnemonicParsing="false" onAction="#findButton" prefHeight="26.0" prefWidth="94.0" text="Button" />
+      <TitledPane animated="false" layoutX="213.0" layoutY="-59.0" text="untitled" />
+      <TableView fx:id="tablePanel" layoutX="59.0" layoutY="172.0" prefHeight="200.0" prefWidth="622.0">
+        <columns>
+          <TableColumn id="id" fx:id="tablePanelId" prefWidth="111.19995498657227" text="id" />
+          <TableColumn id="university" fx:id="tablePanelUniversity" prefWidth="320.80003356933594" text="university" />
+            <TableColumn id="city" fx:id="tablePanelCity" prefWidth="190.39996337890625" text="city" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
